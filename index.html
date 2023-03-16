@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        var myNumbers = [2, 4, -41, 5, -7, 8, 6, -64, 8];
+
+        var sumPositive = 0;
+        var sumNegative = 0;
+
+        for (let index = 0; index < myNumbers.length; index++) {
+            const element = myNumbers[index];
+            // if (element < 0) {
+            //     sumNegative += element
+            // } else {
+            //     sumPositive += element
+            // }
+            element < 0 ? sumNegative += element : sumPositive += element
+        }
+
+        console.log(sumNegative)
+        console.log(sumPositive)
+
+        var sumPositive2 = 0;
+        var sumNegative2 = 0;
+        myNumbers.forEach(element =>
+            element < 0 ? sumNegative2 += element : sumPositive2 += element
+        )
+        console.log(sumNegative2)
+        console.log(sumPositive2)
+    </script>
+</body>
+
+</html>
