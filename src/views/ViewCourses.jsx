@@ -63,7 +63,7 @@ const ViewCourses = () => {
         let newArr = [...coursesDetails]
         newArr = newArr.filter(item => item.order !== order)
         console.log(newArr)
-        setCoursesDetails([])
+        setCoursesDetails(newArr)
         console.log(coursesDetails)
     }
     return (

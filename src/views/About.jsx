@@ -8,6 +8,7 @@ const About = () => {
     const [products, setProduct] = useState([]);
 
     useEffect(() => {
+        // console.log("Product")
         axios.get(baseURL).then((response) => {
             setProduct(response.data);
         });
